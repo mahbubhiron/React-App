@@ -1,6 +1,8 @@
 
 import './App.css';
 import { useState, useEffect } from 'react';
+import In from './F/In';
+import In1 from './F/In1';
 
 function App() {
   const [naykos, setNykos] = useState([]);
@@ -13,6 +15,8 @@ function App() {
   return (
     <div className="App">
       <MovieCount></MovieCount>
+      <In></In>
+      <In1></In1>
       {
         
         n.map(nk => <Nyok name={nk.name} key={nk.id} email={nk.email}></Nyok>)
@@ -56,6 +60,8 @@ function MovieCount() {
     </div>
   )
 }
+
+
 
 
 export default App;
